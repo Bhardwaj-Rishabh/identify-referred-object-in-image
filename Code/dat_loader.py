@@ -347,10 +347,10 @@ def get_data(cfg):
     val_dl = get_dataloader(cfg, val_ds, is_train=False)
 
     test_csv_file = cfg.ds_info[ds_name]['test_csv_file']
-    #test_ds = ImgQuDataset(cfg=cfg, csv_file=test_csv_file,
-    #                       ds_name=ds_name, split_type='valid', need_console=True)
     test_ds = ImgQuDataset(cfg=cfg, csv_file=test_csv_file,
-                           ds_name=ds_name, split_type='valid')
+                           ds_name=ds_name, split_type='valid', need_console=True)
+    #test_ds = ImgQuDataset(cfg=cfg, csv_file=test_csv_file,
+                       #    ds_name=ds_name, split_type='valid')
     test_dl = get_dataloader(cfg, test_ds, is_train=False)
 
     data = DataWrap(path=cfg.tmp_path, train_dl=trn_dl, valid_dl=val_dl,
