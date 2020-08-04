@@ -254,7 +254,7 @@ class ImgQuDataset(Dataset):
 
             new_path_name = './{}'.format(ipath)
             print(new_path_name)
-            shutil.copyfile(current_path_name, new_path_name) #keeps original file 
+            #shutil.copyfile(current_path_name, new_path_name) #keeps original file 
 
             p = subprocess.Popen(["display", current_path_name])
             sample = input("Which object do you want to choose?")

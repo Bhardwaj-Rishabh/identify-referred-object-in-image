@@ -200,11 +200,9 @@ class Evaluator(nn.Module):
                 y2 = round(bb_data[box_num, 3])
                 img = cv2.rectangle(img,(x1, y1), (x2, y2),(0,0,255),20)
                 img_count = img_count + 1
-                nameToSave = 'imageToSendBack'+ str(img_count) + '.jpeg'
-                cv2.imwrite(nameToSave, img)
-                nameToRename = "imageReceive" + str(img_count) + '.jpeg'
-                os.rename(nameToSave, nameToRename)
-                p = subprocess.Popen(["display", "imageReceive1.jpeg"])
+                nameToRename = "output/imgR" + str(img_count) + '.jpeg'
+                cv2.imwrite(nameToRename, img)
+                p = subprocess.Popen(["display", nameToRename])
                 if  bb_data.shape[0] > 1:
                     found_obj = input("Do you mean this?: ")
                     '''

@@ -1,0 +1,2 @@
+2020-08-04 14:43:41,933 utils INFO: No existing model in tmp_test/models/referit_trained_by_Kritika.pth, starting from scratch
+2020-08-04 23:00:55,015 utils INFO: No existing model in tmp_test/models/referit_trained_by_Kritika.pth, starting from scratch
