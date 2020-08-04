@@ -10,6 +10,8 @@ pip install requirement.txt
 ## Step 3: Download the pre-trained model from this link
 https://drive.google.com/file/d/10KEBYtm0pIaz-GQzbzQXWLcY38YcQqHW/view?usp=sharing
 
+and put in the folder : tmp_test/models
+
 ## Step 4: Activate the virtual environment
 source env_real/bin/activate
 
