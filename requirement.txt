@@ -22,9 +22,7 @@ packaging==20.4
 pandas==1.0.5
 Pillow==7.2.0
 plac==1.1.3
-playsound==1.2.2
 preshed==3.0.2
-PyAudio==0.2.11
 pycparser==2.20
 pydub==0.24.1
 pyparsing==2.4.7
@@ -36,10 +34,7 @@ requests==2.24.0
 sacremoses==0.0.43
 sentencepiece==0.1.91
 six==1.15.0
-sounddevice==0.4.0
-SoundFile==0.10.3.post1
 spacy==2.3.2
-SpeechRecognition==3.8.1
 srsly==1.0.2
 termcolor==1.1.0
 thinc==7.4.1
