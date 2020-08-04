@@ -7,7 +7,8 @@ python3 -m venv env_real
 ## Step 2: Install the dependencies
 pip install requirement.txt
 
-## Step 3: Download the pre-trained model
+## Step 3: Download the pre-trained model from this link
+https://drive.google.com/file/d/10KEBYtm0pIaz-GQzbzQXWLcY38YcQqHW/view?usp=sharing
 
 ## Step 4: Activate the virtual environment
 source env_real/bin/activate
