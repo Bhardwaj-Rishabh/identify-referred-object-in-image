@@ -187,7 +187,7 @@ class Evaluator(nn.Module):
                 filename = test_dat.iloc[ind]['img_id']
                 #print(filename)
                 #Kritika
-                img_path=r'./{}'.format('imageSend1.jpeg')
+                img_path=r'./{}'.format('img1.jpeg')
                 #img_path=r'data/referit/saiapr_tc12_images/{}'.format('imageSend1.jpeg')
                 #img_path=r'data/referit/saiapr_tc12_images/{}'.format(filename)
                 img = cv2.imread(img_path)
