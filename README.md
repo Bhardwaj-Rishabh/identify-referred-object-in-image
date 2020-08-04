@@ -13,4 +13,4 @@ pip install requirement.txt
 source env_real/bin/activate
 
 ## Step 5: Run the pre-trained model on a new image
-python code/main_dist.py referit_trained_by_Kritika --ds_to_use='refclef' --resume=True --only_test=True --only_val=False
+python Code/main_dist.py referit_trained_by_Kritika --ds_to_use='refclef' --resume=True --only_test=True --only_val=False
