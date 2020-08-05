@@ -1,5 +1,13 @@
 # Identify-referred-object-in-image
-This repository provides a solution for end-to-end referring expression comprehension in the scene
+This repository provides a solution for end-to-end referring expression comprehension in the scene.
+
+We have implemented on top of the code available in the following repository :
+
+@article{zhou2019a,
+title={A Real-time Global Inference Network for One-stage Referring Expression Comprehension.},
+author={Zhou, Yiyi and Ji, Rongrong and Luo, Gen and Sun, Xiaoshuai and Su, Jinsong and Ding, Xinghao and Lin, Chiawen and Tian, Qi},
+journal={arXiv: Computer Vision and Pattern Recognition},
+year={2019}}
 
 ## Step 1: Create a Python 3 virtual environment
 python3 -m venv env_real
