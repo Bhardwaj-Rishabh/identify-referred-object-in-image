@@ -25,18 +25,7 @@ pip install requirement.txt
 source env_real/bin/activate
 ```
 
-## Step 4: Train your model
-
-Download the dataset from this [link](https://drive.google.com/file/d/1-hUcb_YGMka-4eLHsjivC8F0fDGg2kLv/view?usp=sharing)
-
-and put in the folder : data/referit/
-
-Then execute the following command
-```
-python code_to_train/main_dist.py "referit_try" --ds_to_use='refclef' --bs=16 --nw=
-```
-
-## Step 5: Run the pre-trained model on a new image
+## Step 4: Run the pre-trained model on a new image
 
 Download the pre-trained model from this [link](https://drive.google.com/file/d/10KEBYtm0pIaz-GQzbzQXWLcY38YcQqHW/view?usp=sharing)
 
@@ -48,3 +37,15 @@ Change the value of argument "img_dir": "./input" in configs/ds_info.json file.
 ```
 python Code/main_dist.py referit_trained_by_Kritika --ds_to_use='refclef' --resume=True --only_test=True --only_val=False
 ```
+
+## Step 5: Train your model
+
+Download the dataset from this [link](https://drive.google.com/file/d/1-hUcb_YGMka-4eLHsjivC8F0fDGg2kLv/view?usp=sharing)
+
+and put in the folder : data/referit/
+
+Then execute the following command
+```
+python code_to_train/main_dist.py "referit_try" --ds_to_use='refclef' --bs=16 --nw=
+```
+
