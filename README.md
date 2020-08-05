@@ -20,9 +20,9 @@ source env_real/bin/activate
 
 ## Step 4: Train your model
 
-Download the dataset from this link
+Download the dataset from this [link](https://drive.google.com/file/d/1-hUcb_YGMka-4eLHsjivC8F0fDGg2kLv/view?usp=sharing
+)
 
-https://drive.google.com/file/d/1-hUcb_YGMka-4eLHsjivC8F0fDGg2kLv/view?usp=sharing
 
 and put in the folder : data/referit/
 
