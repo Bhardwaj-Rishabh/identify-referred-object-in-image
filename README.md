@@ -14,8 +14,11 @@ and put in the folder : tmp_test/models
 ## Step 4: Activate the virtual environment
 source env_real/bin/activate
 
+## Step 5: Train your model
+python code_to_train/main_dist.py "referit_try" --ds_to_use='refclef' --bs=16 --nw=4
 
-## Step 5: Run the pre-trained model on a new image
+
+## Step 6: Run the pre-trained model on a new image
 Store the test image in input folder
 
 Change the value of argument "img_dir": "./input" in configs/ds_info.json file.
