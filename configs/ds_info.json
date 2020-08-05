@@ -8,7 +8,7 @@
     },
     "refclef": {
 	"data_dir": "./data/refclef",
-	"img_dir": "./input",
+	"img_dir": "./data/referit/saiapr_tc12_images_orig",
 	"trn_csv_file": "./data/referit/csv_dir/train_flat.csv",
 	"val_csv_file": "./data/referit/csv_dir/val.csv",
 	"test_csv_file": "./data/referit/csv_dir/test.csv"
