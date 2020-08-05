@@ -3,13 +3,13 @@ This repository provides a solution for end-to-end referring expression comprehe
 
 We have implemented on top of the code available in the following [repository](https://github.com/luogen1996/Real-time-Global-Inference-Network) :
 
-___
+```
 @article{zhou2019a,
 title={A Real-time Global Inference Network for One-stage Referring Expression Comprehension.},
 author={Zhou, Yiyi and Ji, Rongrong and Luo, Gen and Sun, Xiaoshuai and Su, Jinsong and Ding, Xinghao and Lin, Chiawen and Tian, Qi},
 journal={arXiv: Computer Vision and Pattern Recognition},
 year={2019}}
-___
+```
 
 ## Step 1: Create a Python 3 virtual environment
 ```
