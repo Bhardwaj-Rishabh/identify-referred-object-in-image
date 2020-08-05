@@ -7,16 +7,21 @@ python3 -m venv env_real
 ## Step 2: Install the dependencies
 pip install requirement.txt
 
-## Step 3: Download the pre-trained model from this link
-https://drive.google.com/file/d/10KEBYtm0pIaz-GQzbzQXWLcY38YcQqHW/view?usp=sharing
-and put in the folder : tmp_test/models
-
-## Step 4: Activate the virtual environment
+## Step 3: Activate the virtual environment
 source env_real/bin/activate
 
-## Step 5: Train your model
+## Step 4: Train your model
+
+Download the dataset from this link
+https://drive.google.com/file/d/1-hUcb_YGMka-4eLHsjivC8F0fDGg2kLv/view?usp=sharing
+and put in the folder : data/referit/
+
+Then execute the following command
 python code_to_train/main_dist.py "referit_try" --ds_to_use='refclef' --bs=16 --nw=4
 
+## Step 4: Download the pre-trained model from this link
+https://drive.google.com/file/d/10KEBYtm0pIaz-GQzbzQXWLcY38YcQqHW/view?usp=sharing
+and put in the folder : tmp_test/models
 
 ## Step 6: Run the pre-trained model on a new image
 Store the test image in input folder
