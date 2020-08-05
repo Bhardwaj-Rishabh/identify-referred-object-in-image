@@ -1,7 +1,7 @@
 # Identify-referred-object-in-image
 This repository provides a solution for end-to-end referring expression comprehension in the scene.
 
-We have implemented on top of the code available in the following repository :
+We have implemented on top of the code available in the following [repository](https://github.com/luogen1996/Real-time-Global-Inference-Network) :
 
 ___
 @article{zhou2019a,
@@ -12,13 +12,18 @@ year={2019}}
 ___
 
 ## Step 1: Create a Python 3 virtual environment
+```
 python3 -m venv env_real
+```
 
 ## Step 2: Install the dependencies
+```
 pip install requirement.txt
-
+```
 ## Step 3: Activate the virtual environment
+```
 source env_real/bin/activate
+```
 
 ## Step 4: Train your model
 
@@ -27,8 +32,9 @@ Download the dataset from this [link](https://drive.google.com/file/d/1-hUcb_YGM
 and put in the folder : data/referit/
 
 Then execute the following command
-
-python code_to_train/main_dist.py "referit_try" --ds_to_use='refclef' --bs=16 --nw=4
+```
+python code_to_train/main_dist.py "referit_try" --ds_to_use='refclef' --bs=16 --nw=
+```
 
 ## Step 5: Run the pre-trained model on a new image
 
@@ -39,5 +45,6 @@ and put in the folder : tmp_test/models
 Store the test image in input folder
 
 Change the value of argument "img_dir": "./input" in configs/ds_info.json file.
-
+```
 python Code/main_dist.py referit_trained_by_Kritika --ds_to_use='refclef' --resume=True --only_test=True --only_val=False
+```
