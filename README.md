@@ -9,11 +9,15 @@ pip install requirement.txt
 
 ## Step 3: Download the pre-trained model from this link
 https://drive.google.com/file/d/10KEBYtm0pIaz-GQzbzQXWLcY38YcQqHW/view?usp=sharing
-
 and put in the folder : tmp_test/models
 
 ## Step 4: Activate the virtual environment
 source env_real/bin/activate
 
+
 ## Step 5: Run the pre-trained model on a new image
+Store the test image in input folder
+
+Change the value of argument "img_dir": "./input" in configs/ds_info.json file.
+
 python Code/main_dist.py referit_trained_by_Kritika --ds_to_use='refclef' --resume=True --only_test=True --only_val=False
