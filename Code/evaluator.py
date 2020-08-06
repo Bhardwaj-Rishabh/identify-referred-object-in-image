@@ -88,18 +88,6 @@ class Evaluator(nn.Module):
         topk_box = torch.topk(att_box_sigmoid,k=100) #added by rishabh
         att_box_best, att_box_best_ids = topk_box.values, topk_box.indices  #added by rishabh
 
-        #print("\n --> att box", att_box)
-        #print("\n --> att box shape", att_box.shape)
-        #print("\n --> att box sigmoid shape", att_box_sigmoid.shape)
-        #print("\n --> att box best shape", att_box_best.shape)
-        #print("\n --> att box id", att_box_best_ids)
-        #print("\n->  att box best",att_box_best, 
-        #    "\n->  att box best ids", att_box_best_ids, 
-        #    "\n->  top k att box", torch.topk(att_box_sigmoid,k=5)
-        #    )
-        #Kritika1
-       # self.att_box_best = att_box_best
-
         ious1 = IoU_values(annot, anchs)
         #print("-->iou:", ious1.shape)
         gt_mask, expected_best_ids = ious1.max(1)
@@ -187,7 +175,7 @@ class Evaluator(nn.Module):
                 filename = test_dat.iloc[ind]['img_id']
                 #print(filename)
                 #Kritika
-                img_path=r'./{}'.format('img1.jpeg')
+                img_path=r'input/{}'.format('img1.jpeg')
                 #img_path=r'data/referit/saiapr_tc12_images/{}'.format('imageSend1.jpeg')
                 #img_path=r'data/referit/saiapr_tc12_images/{}'.format(filename)
                 img = cv2.imread(img_path)
