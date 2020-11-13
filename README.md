@@ -33,7 +33,7 @@ and put in the folder : tmp_test/models
 
 Store the test image in input folder
 
-Change the value of argument "img_dir": "./input" in configs/ds_info.json file.
+Change the value of argument "img_dir": "./input" in **configs/ds_info.json** file.
 ```
 python Code/main_dist.py referit_trained_by_Kritika --ds_to_use='refclef' --resume=True --only_test=True --only_val=False
 ```
